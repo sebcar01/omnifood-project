@@ -1,0 +1,132 @@
+/* Basic reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/* ----------------------------------------------------- */
+
+/* Layout */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------------- */
+/* Header */
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Main header text */
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.main-logo {
+    height: auto;
+    width: 10%;
+    float: left;
+    margin-top: 20px;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Navigation bar */
+
+.nav-bar {
+    position: relative;
+}
+
+.main-nav {
+    float: right;
+    margin-top: 55px;
+}
+
+.nav-bar li {
+    display: inline-block;
+}
+
+.nav-bar li:not(:last-child) {
+    padding-right: 25px;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid #e67e22;
+}
+
+/* Button global reset */
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 500px;
+    border: #e67e22 solid 1px;
+    transition: all 0.4s;
+    margin-top: 10px;
+}
+
+/* Main header buttons */
+
+.btn-full:link,
+.btn-full:visited {
+    color: #fff;
+    background-color: #e67e22;
+    margin-right: 15px;
+}
+
+.btn-full:hover {
+    background-color: #cf6d17;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    color: #e67e22;
+}
+
+.btn-ghost:hover {
+    color: #fff;
+    background-color: #e67e22;   
+}
