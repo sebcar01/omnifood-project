@@ -14,6 +14,16 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom:1}
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
 /* ----------------------------------------------------- */
 
 /* Layout */
@@ -21,6 +31,14 @@ html {
 .row {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
 }
 
 /* ----------------------------------------------------- */
@@ -31,19 +49,7 @@ header {
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/hero.jpg);
     background-size: cover;
     background-position: center;
-}
-
-/* Main header text */
-
-h1 {
-    margin: 0;
-    color: #fff;
-    font-size: 240%;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 4px;
-    margin-bottom: 30px;
+    background-attachment: fixed;
 }
 
 .main-logo {
@@ -59,6 +65,241 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* Features */
+
+.features-section .long-copy {
+    margin-bottom: 30px;
+}
+
+/* Meals */
+
+.meals-section {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+}
+
+.meal-photo img:hover {
+    transform: scale(1.03);
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+/* Steps */
+
+.steps-section {
+    background-color: #f4f4f4;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.work-step {
+    margin-bottom: 50px;
+}
+
+.work-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.work-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    /* display: inline-block; */
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.app-btn img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Cities */
+
+.city-copy h3 {
+    margin-top: 15px;
+}
+
+.city-img img {
+    width: 100%;
+    height: auto;
+}
+
+.city-info {
+    margin-bottom: 10px;
+}
+
+.twitter-text {
+    color: #e67e22;
+    border-bottom: 1px solid #e67e22;
+    text-decoration: none;
+}
+
+.twitter-text:hover {
+    color: #555;
+    border-bottom: none;
+    transition: all 0.5s;
+}
+
+/* Testimonials */
+
+.testimonials-section {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite img {
+    height: 45px;
+    border-radius: 100px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Headings*/
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 0 0 30px 0;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.box h3 {
+    text-align: center;
+    
+}
+
+h2::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    width: 100px;
+    margin: 30px auto;
+}
+
+/* Paragraphs */
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin: 0 15%;
+
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* Icons */
+
+.icon-big {
+    font-size: 250%;
+    display: block;
+    color: #e67e22;
+    margin: 0 auto 10px;
+}
+
+.icon-cities {
+    float: left;
+    padding: 0 8px;
+    color: #e67e22;
+    margin-right: 10px;
+}
+
+.twitter-icon:hover {
+    color: rgba(29,161,242,1.00);
+    transition: all 0.5s;
 }
 
 /* Navigation bar */
