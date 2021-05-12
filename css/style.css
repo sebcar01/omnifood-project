@@ -224,6 +224,120 @@ cite img {
     vertical-align: middle;
 }
 
+/* Plans */
+
+.plans-section {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 15px;
+}
+
+.plan-first-box {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-third-box {
+    text-align: center;
+}
+
+.plan-box div:not(:last-child) {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-number {
+    font-size: 300%;
+    font-weight: 100;
+}
+
+.plan-price {
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.plan-price__meal {
+    font-size: 80%;
+}
+
+.plan-second-box li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+/* Contact form */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #333;
+    padding: 50px;
+    color: #888;
+    font-size: 80%;
+}
+
+.footer-menu-left {
+    float: left;
+}
+
+.footer-menu-right {
+    float:right;
+}
+
+.footer-item {
+    display: inline-block;
+    list-style: none;
+    margin-left: 15px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #888;
+}
+
+.footer-menu-left a:hover {
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.footer-text {
+    margin-top: 30px;
+    text-align: center;
+}
+
 /* Headings*/
 
 h1,
@@ -290,16 +404,29 @@ h2::after {
     margin: 0 auto 10px;
 }
 
-.icon-cities {
+.icon-small {
     float: left;
-    padding: 0 8px;
+    text-align: center;
+    vertical-align: middle;
     color: #e67e22;
     margin-right: 10px;
 }
 
+.social-media-transition {
+    transition: all 0.5s;
+    font-size: 130%;
+}
+
 .twitter-icon:hover {
     color: rgba(29,161,242,1.00);
-    transition: all 0.5s;
+}
+
+.facebook-icon:hover {
+    color: #385898;
+}
+
+.default-icon:hover {
+    color: #fff;
 }
 
 /* Navigation bar */
@@ -335,8 +462,9 @@ h2::after {
     border-bottom: 2px solid #e67e22;
 }
 
-/* Button global reset */
+/* Buttons */
 
+.btn,
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -348,8 +476,6 @@ h2::after {
     transition: all 0.4s;
     margin-top: 10px;
 }
-
-/* Main header buttons */
 
 .btn-full:link,
 .btn-full:visited {
@@ -370,4 +496,9 @@ h2::after {
 .btn-ghost:hover {
     color: #fff;
     background-color: #e67e22;   
+}
+
+.btn-form {
+    background-color: #e67e22;
+    color: #fff;
 }
