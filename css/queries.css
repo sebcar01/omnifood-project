@@ -1,0 +1,221 @@
+
+@media only screen and (max-width: 321px) {
+    .hero-text-box {
+        margin-top: 60px;
+    }
+}
+
+/* Smallests phones 0px - 399px */
+
+/* General */
+@media only screen and (max-width: 479px) {
+
+    h1 {
+        font-size: 180%;
+    }
+
+    /* Steps section */
+
+    .steps-box {
+        text-align: center;
+    }
+
+    .steps-box .work-step {
+        text-align: left;
+    }
+
+    .app-screen {
+        margin-top: 0!important;
+    }
+
+    /* Cities section */
+
+    .city-copy h3 {
+        text-align: center;
+    }
+
+    .city-info {
+        width: 50%;
+        margin: 0 auto 15px auto;
+    }
+
+    .city-img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Testimonials section */
+
+    blockquote::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    blockquote {
+        text-align: center;
+    }
+    
+    cite {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Plans section */
+    .plans-section h2 {
+        font-size: 140%;
+    }
+
+    .plan-third-box {
+        margin-bottom: 20px;
+    }
+
+    /* Contact Form */
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        margin-top: 15px;
+    }
+
+    .contact-form input,
+    .contact-form select {
+        margin-bottom: 10px;
+    }
+
+    .btn-form {
+        width: 100%;
+    }
+
+    /* Footer */
+
+    .footer {
+        text-align: center;
+    }
+    .footer-menu-left,
+    .footer-menu-right  {
+        width: 100%;
+    }
+
+    .footer-menu-right {
+        margin-top: 30px;
+    }
+}
+
+/* ---------------------- // -------------------------------- */
+
+/* Small phones to small tablets 480px - 766 px */
+
+@media only screen and (max-width: 767px) {
+    .main-logo {
+        width: 30%;
+    }
+    
+    .main-nav {
+        display: none;
+    }
+    
+    h3 {
+        font-size: 90%;
+    }
+
+    /* Features section */
+
+    .features-section p {
+        text-align: center;
+    }
+
+    /* Steps section */
+    .steps-box {
+         text-align: left;
+    }
+
+    .app-screen {
+        display: block;
+        margin-left: auto!important;
+        margin-right: auto!important;
+        margin-top: 65px;
+    }
+}
+
+/* ---------------------- // -------------------------------- */
+
+/* Small tablets to portrait tablets 768px - 1022 px */
+
+/* General */
+
+@media only screen and (max-width: 1023px) {
+    body { font-size: 18px; }
+
+    section { padding: 60px 0; }
+
+    .twitter-text {
+        font-size: 17px;
+    }
+    
+    /* Steps section */
+
+    .app-screen {
+        margin-right: 20%;
+    }
+
+    .steps-box:last-child {
+        margin-top: 50px;
+    }
+    
+    .work-step:last-of-type {
+        margin-bottom: 70px;
+    }
+
+    .app-btn img {
+        margin-right: 5px;
+    }
+}
+
+/* Detailed */
+
+/* 768px - 919px */
+@media only screen and (min-width: 768px) and (max-width: 919px) {
+    .work-step {
+        margin-bottom: 30px;
+    }
+
+    .app-screen {
+        width: 50%;
+    }
+
+    .app-btn img {
+        height: 45px;
+    }
+}
+
+/* 920px - 1022px */
+@media only screen and (min-width: 920px) and (max-width: 1022px) {
+    .work-step {
+        margin-bottom: 60px;
+    }
+
+    .app-screen {
+        width: 45%;
+    }
+}
+
+/* ---------------------- // -------------------------------- */
+
+/* Portrait tablets to small pc screens 1024px - 1199px */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 80%;
+    }
+
+    .row { padding: 0 2%; }
+
+    .main-logo {
+        margin-left: 8%;
+    }
+}
