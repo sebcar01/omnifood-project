@@ -12,6 +12,7 @@ html {
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
 }
 
 .clearfix {zoom:1}
@@ -57,6 +58,14 @@ header {
     width: 10%;
     float: left;
     margin-top: 20px;
+}
+
+.main-logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
 }
 
 .hero-text-box {
@@ -434,6 +443,7 @@ h2::after {
 
 .nav-bar {
     position: relative;
+
 }
 
 .main-nav {
@@ -461,6 +471,50 @@ h2::after {
 
 .nav-item:hover {
     border-bottom: 2px solid #e67e22;
+}
+
+/* Sticky nav */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 1;
+}
+
+.sticky .nav-item {
+    color: #555;
+    padding: 15px 0;
+}
+
+.sticky .main-logo {
+    display: none;
+}
+
+.sticky .main-logo-black {
+    display: block;
+
+}
+
+.sticky .main-nav {
+    margin-top: 18px;
+}
+
+/* Mobile nav */
+
+.mobile-menu {
+    display: none;
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.mobile-menu-icon {
+    font-size: 200%;
+    color: #fff;
 }
 
 /* Buttons */
@@ -502,4 +556,12 @@ h2::after {
 .btn-form {
     background-color: #e67e22;
     color: #fff;
+}
+
+/* Animations */
+
+.js-wp-1,
+.js-wp-2,
+.js-wp-3 {
+    opacity: 0;
 }

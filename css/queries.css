@@ -3,6 +3,23 @@
     .hero-text-box {
         margin-top: 60px;
     }
+
+    .main-logo {
+        width: 18%!important;
+    }
+
+    .nav-bar {
+        z-index: 2;
+    }
+
+    .main-nav {
+        background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
+        border-radius: 5px;
+    }
+
+    .nav-bar li {
+        padding: 0 0 0 5px!important;
+    }
 }
 
 /* Smallests phones 0px - 399px */
@@ -113,11 +130,46 @@
 
 @media only screen and (max-width: 767px) {
     .main-logo {
-        width: 30%;
+        width: 25%;
     }
     
     .main-nav {
         display: none;
+        margin-top: 35px;
+        margin-left: 25px;
+        float: left;
+    }
+
+    .main-nav li a {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+
+    .nav-bar li {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: inline-block;
+        margin-top: 35px;
+    }
+
+    .sticky .mobile-menu {
+        margin-top: 10px;
+    }
+
+    .sticky .mobile-menu-icon {
+        color: #555;
+    }
+    
+    .sticky .nav-item {
+        padding: 10px 0;
+    }
+    
+    .sticky .main-nav {
+        margin-top: 10px;
     }
     
     h3 {
